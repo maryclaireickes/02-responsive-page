@@ -120,3 +120,31 @@ a:hover {
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 600px) {
+  #featured-article h2 {
+  font-size: 24px;
+}
+  h1 {
+    font-size: 24px;
+  }
+  h2, #featured-article h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+  main {
+    padding: 8px;
+  }
+  #featured-article {
+    padding: 16px;
+  }
+  section {
+    padding: 10px;
+  }
+}
