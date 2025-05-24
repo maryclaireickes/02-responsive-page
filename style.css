@@ -11,15 +11,35 @@ header {
   background: #333;
   color: #fff;
   padding: 16px;
-  text-align: center;
+  text-align: left;
+  position: relative;
   font-family: 'Exo 2', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+  display: block; /* For beginners, avoid flexbox. */
+}
+
+header h1 {
+  margin-bottom: 0;
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
-  text-align: center;
+  margin: 0;
+  display: inline-block;
+  vertical-align: right;
+  text-align: right;
 }
 
 header nav ul li {
@@ -171,5 +191,29 @@ a:hover {
   }
   section {
     padding: 10px;
+  }
+  header {
+    text-align: center;
+    display: block;
+  }
+  header h1,
+  header nav {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+    margin: 12px 0 0 0;
+  }
+  header nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 8px 0;
   }
 }
